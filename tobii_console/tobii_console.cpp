@@ -41,6 +41,20 @@
 			return 1;
 		}
 
+		
+		error = tobii_wait_for_callbacks(device);
+		if (error != TOBII_ERROR_NO_ERROR) {
+			printf("error wait for callbacks\n");
+		}
+
+		printf("wait ok\n");
+		error = tobii_process_callbacks(device);
+		if (error != TOBII_ERROR_NO_ERROR) {
+			printf("error process callbacks\n");
+		}
+
+		printf("process ok\n");
+
 		while (true) {
 
 		}
