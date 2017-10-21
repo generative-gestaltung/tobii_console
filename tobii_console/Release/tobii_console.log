@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  AssemblyInfo.cpp
+  tobii_console.cpp
+  Code wird generiert...
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
+tobii_console.obj : warning LNK4248: Nicht aufgelöstes Typeref-Token (0100000D) für "tobii_device_t". Das Image kann möglicherweise nicht ausgeführt werden.
+tobii_console.obj : warning LNK4248: Nicht aufgelöstes Typeref-Token (0100000E) für "tobii_api_t". Das Image kann möglicherweise nicht ausgeführt werden.
+  tobii_console.vcxproj -> C:\Users\Benjamin\source\repos\tobii_console\Release\tobii_console.exe
