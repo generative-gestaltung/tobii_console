@@ -42,8 +42,8 @@ int main()
 		[](tobii_gaze_point_t const* gaze_point, void* user_data)
 	{
 
-		int x = 0;
-		int y = 0;
+		int x = (int)gaze_point->position_xy[0];
+		int y = (int)gaze_point->position_xy[1];
 
 		(void)user_data; // Unused parameter
 		if (gaze_point->validity == TOBII_VALIDITY_VALID) {
