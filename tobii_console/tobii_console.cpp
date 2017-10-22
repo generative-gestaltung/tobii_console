@@ -42,20 +42,22 @@
 		}
 
 		
-		error = tobii_wait_for_callbacks(device);
-		if (error != TOBII_ERROR_NO_ERROR) {
-			printf("error wait for callbacks\n");
-		}
-
-		printf("wait ok\n");
-		error = tobii_process_callbacks(device);
-		if (error != TOBII_ERROR_NO_ERROR) {
-			printf("error process callbacks\n");
-		}
-
-		printf("process ok\n");
-
+		
 		while (true) {
+			error = tobii_wait_for_callbacks(device);
+			if (error != TOBII_ERROR_NO_ERROR) {
+				printf("error wait for callbacks\n");
+			}
+
+			printf("wait ok\n");
+			error = tobii_process_callbacks(device);
+			if (error != TOBII_ERROR_NO_ERROR) {
+				printf("error process callbacks\n");
+			}
+
+			int64_t timestamp;
+			error = tobii_system_clock(api, &timestamp);
+			printf("time: %d\n", timestamp);
 
 		}
 
