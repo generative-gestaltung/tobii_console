@@ -9,7 +9,7 @@
 
 #pragma comment (lib, "ws2_32.lib")
 
-#define WITH_TOBII 0
+#define WITH_TOBII 1
 #define WITH_SOCKETS 1
 
 
@@ -53,15 +53,13 @@ int main()
 			printf("Gaze point: %g INVALID", gaze_point->position_xy);
 		}
 		
+		sprintf(buf, "%d\n%d", x, y);
+
 		if (sendto(sock, buf, strlen(buf), 0, (SOCKADDR*)&remote_addr, addr_len) == SOCKET_ERROR) {
 			printf("send failed\n");
 		}
 
-		sprintf(buf, "%d\n%d", x, y);
-		int ret = sendto(sock, buf, strlen(buf), 0, (SOCKADDR*)remote_addr, addr_len);
-		if (ret == SOCKET_ERROR) {
-			printf("sock send error\n");
-		}
+		
 	}, 0);
 
 	if (error != TOBII_ERROR_NO_ERROR)
