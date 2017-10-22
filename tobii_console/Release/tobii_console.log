@@ -1,13 +1,17 @@
-﻿  tobii_console.cpp
-tobii_console.cpp(50): warning C4477: "printf": Die Formatzeichenfolge "%g" erfordert ein Argument vom Typ "double", das variadic-Argument "1" weist aber den Typ "const int64_t" auf.
-tobii_console.cpp(53): warning C4477: "printf": Die Formatzeichenfolge "%g" erfordert ein Argument vom Typ "double", das variadic-Argument "1" weist aber den Typ "const float *" auf.
-tobii_console.cpp(56): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  stdafx.cpp
+  AssemblyInfo.cpp
+  tobii_console.cpp
+tobii_console.cpp(53): warning C4477: "printf": Die Formatzeichenfolge "%g" erfordert ein Argument vom Typ "double", das variadic-Argument "1" weist aber den Typ "const int64_t" auf.
+tobii_console.cpp(56): warning C4477: "printf": Die Formatzeichenfolge "%g" erfordert ein Argument vom Typ "double", das variadic-Argument "1" weist aber den Typ "const float *" auf.
+tobii_console.cpp(60): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\stdio.h(1772): note: Siehe Deklaration von "sprintf"
-tobii_console.cpp(84): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+tobii_console.cpp(88): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\um\WinSock2.h(1830): note: Siehe Deklaration von "inet_addr"
-tobii_console.cpp(109): warning C4477: "printf": Die Formatzeichenfolge "%d" erfordert ein Argument vom Typ "int", das variadic-Argument "1" weist aber den Typ "int64_t" auf.
-  tobii_console.cpp(109): note: Verwenden Sie ggf. "%lld" in der Formatzeichenfolge.
-  tobii_console.cpp(109): note: Verwenden Sie ggf. "%I64d" in der Formatzeichenfolge.
+tobii_console.cpp(113): warning C4477: "printf": Die Formatzeichenfolge "%d" erfordert ein Argument vom Typ "int", das variadic-Argument "1" weist aber den Typ "int64_t" auf.
+  tobii_console.cpp(113): note: Verwenden Sie ggf. "%lld" in der Formatzeichenfolge.
+  tobii_console.cpp(113): note: Verwenden Sie ggf. "%I64d" in der Formatzeichenfolge.
+  Code wird generiert...
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
 tobii_console.obj : warning LNK4248: Nicht aufgelöstes Typeref-Token (01000014) für "tobii_device_t". Das Image kann möglicherweise nicht ausgeführt werden.
 tobii_console.obj : warning LNK4248: Nicht aufgelöstes Typeref-Token (01000015) für "tobii_api_t". Das Image kann möglicherweise nicht ausgeführt werden.
   tobii_console.vcxproj -> C:\Users\Benjamin\source\repos\tobii_console\Release\tobii_console.exe
