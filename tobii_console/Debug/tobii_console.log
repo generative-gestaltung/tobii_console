@@ -1,5 +1,4 @@
 ﻿  tobii_console.cpp
-  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
-tobii_console.obj : warning LNK4248: Nicht aufgel÷stes Typeref-Token (0100000D) f³r "tobii_device_t". Das Image kann m÷glicherweise nicht ausgef³hrt werden.
-tobii_console.obj : warning LNK4248: Nicht aufgel÷stes Typeref-Token (0100000E) f³r "tobii_api_t". Das Image kann m÷glicherweise nicht ausgef³hrt werden.
+tobii_console.cpp(86): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\um\WinSock2.h(1830): note: Siehe Deklaration von "inet_addr"
   tobii_console.vcxproj -> C:\Users\Benjamin\source\repos\tobii_console\Debug\tobii_console.exe
