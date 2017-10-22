@@ -42,8 +42,11 @@ int main()
 		[](tobii_gaze_point_t const* gaze_point, void* user_data)
 	{
 
-		int x = (int)gaze_point->position_xy[0];
-		int y = (int)gaze_point->position_xy[1];
+		//int x = (int)gaze_point->position_xy[0];
+		//int y = (int)gaze_point->position_xy[1];
+
+		double x = gaze_point->position_xy[0];
+		double y = gaze_point->position_xy[1];
 
 		(void)user_data; // Unused parameter
 		if (gaze_point->validity == TOBII_VALIDITY_VALID) {
@@ -53,7 +56,8 @@ int main()
 			printf("Gaze point: %g INVALID", gaze_point->position_xy);
 		}
 		
-		sprintf(buf, "%d\n%d", x, y);
+		//sprintf(buf, "%d\n%d", x, y);
+		sprintf(buf, "%g\n%g", x, y);
 
 		if (sendto(sock, buf, strlen(buf), 0, (SOCKADDR*)&remote_addr, addr_len) == SOCKET_ERROR) {
 			printf("send failed\n");
